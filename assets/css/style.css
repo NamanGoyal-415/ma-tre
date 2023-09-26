@@ -20,7 +20,7 @@
     --fs-32: 32px;
     --fs-40: 40px;
     --fs-48: 48px;
-    --fs-61: 61.175px;
+    --fs-61: 61px;
 
     /*font-family*/
     --ff-work: 'Work Sans', sans-serif;
@@ -205,7 +205,6 @@
     transition: all 200ms linear;
 
 }
-
 .S3-card {
     max-width: 293.437px;
     height: 293.516px;
@@ -645,10 +644,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 50vh;
     text-align: center;
 }
-
+.footer-img{
+    position: absolute;
+}
 .footer-para {
     color: var(--color-white);
     font-family: var(--ff-work);
@@ -656,10 +656,12 @@
     font-style: normal;
     font-weight: var(--fw-400);
     line-height: 153.8%;
-    display: inline-block !important;
     max-width: 375px;
+    
 }
-
+.pt-150{
+    padding-top: 150px;
+}
 .footer-nav {
     color: var(--color-white);
     text-align: center;
@@ -668,6 +670,7 @@
     font-style: normal;
     font-weight: var(--fw-600);
     line-height: 153.8%;
+    text-decoration: none;
 }
 
 .foot {
@@ -684,6 +687,9 @@
     .next,
     .prev {
         display: none !important;
+    }
+    .bg-footer{
+        min-height: 25vh;
     }
 }
 
@@ -808,12 +814,6 @@
         display: none;
     }
 
-    .bg-footer {
-        min-height: 30vh;
-    }
-
-    .foot {
-        position: absolute;
-        bottom: -44%;
-    }
+    
+   
 }
